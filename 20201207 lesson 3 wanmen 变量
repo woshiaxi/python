@@ -1,0 +1,114 @@
+# 不可变型
+## 字符串 str  string
+### 整数 int integer
+### 浮点 float float
+### 元组 tuple tuple
+# 可变型
+### 字典 dict dictionary
+### 列表 list dictionary
+
+#### len() 判断 字符串的长度
+#### type() 判断变量的类型
+#### id() 输出变量对应的地址
+#### [0:10] 字符串切片
+
+# 字符串 
+name = 'janice'
+print(name)
+print(id(name))
+print(type(name))
+print(len(name))
+
+# \不能放在末尾,\后面要跟一个命令
+print('janice\'')
+print('janice\n')
+
+# 整数
+age = 29
+print(age)
+print(id(age))
+print(type(age))
+
+# 浮点-小数
+height = 1.677
+print(height)
+print(id(height))
+print(type(height))
+
+# 变量的多对多赋值
+name,age = 'janice',29
+print(name,age)
+
+def myInfo():
+    new_name = 'axi'
+    new_age = 29
+    return new_name,new_age
+
+new_name, new_age = myInfo()
+print(new_name,new_age)
+
+message_2 = 'goodboy'
+print(message_2)
+print(id(message_2))
+print(len(message_2))
+
+num1 = 256
+num2 = 256
+print(id(num1),id(num2))
+
+# 变量多标签
+bedroom = '枕头'
+pillow = bedroom
+
+print(bedroom)
+print(pillow)
+
+print(id(bedroom),id(pillow))
+
+
+bedroom = '枕头、床单、被罩'
+print(bedrooom,id(bedroom))
+# 求助，这儿为什么显示错误，好奇怪呀
+NameError                                 Traceback (most recent call last)
+<ipython-input-47-c7f863eeabdc> in <module>
+----> 1 print(bedrooom,id(bedroom))
+      2 print(pillow,id(pillow))
+
+NameError: name 'bedrooom' is not defined
+print(pillow,id(pillow))
+
+# 变量赋值
+name = '阿西'
+print(id(name))
+print(name)
+
+name = name + 'Janice'
+print(id(name))
+print(name)
+
+# 变量命名原则
+import keyword
+keyword.kwlist
+
+# 变量建议下划线间隔 dog_name
+# 函数建议小驼峰 homeAddress
+# 类建议大驼峰 AnimalType
+
+# 字符串切片
+word_1 = '我的名字是阿西'
+word_2 = '20201207'
+print(len(word_1))
+
+print(word_1[0])
+print(word_1[2:7])
+print(word_1[0:2])
+print(word_1[-1])
+print(word_1[:4])
+print(word_1[2:])
+
+print(word_2)
+new_number = word_2[0:4]
+print(new_number)
+
+test1 = 'abc'
+test1
