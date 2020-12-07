@@ -1,0 +1,14 @@
+import random #random 标准库
+all_raw_code =['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+my_code = []#列表
+for i in range(4): #for循环知识点
+    #注意缩进语法 indent（从属关系）
+    gen_code = all_raw_code[random.randint(0,len(all_raw_code)-1)]
+    print(gen_code)
+    my_code.append(gen_code)
+print('阿西的提取码为：',''.join(my_code))
+import string
+import random
+code = ''.join(random.sample((string.digits + string.ascii_lowercase),4))
+print(code)
+print(string.digits[0:5])
