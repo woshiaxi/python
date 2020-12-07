@@ -1,0 +1,40 @@
+print("hello python")
+print("'hello python'")
+print('"hello python"')
+print('''
+woshiaxi
+
+xuexi python
+
+so hard
+''')
+# this is markdown
+## this is markdown
+
+print('"hello python"')
+
+'''my first python story
+second story
+
+third story
+'''
+print('我的名字是阿西')
+print('我的名字是%s'%('阿西'))
+print('我的名字是%s,我的年龄是%d，我的老公是%s,我住在%s,我的身高是%s米'%('阿西',29,'阿东','上海','1.677'))
+print('我的名字是%s,我的年龄是%s，我的老公是%s,我住在%s,我的身高是%s米'%('阿西',29,'阿东','上海','1.677'))
+print('我的名字是%s,我的年龄是%d，我的老公是%s,我住在%s,我的身高是%.2f米'%('阿西',29,'阿东','上海',1.677))
+name = '阿西'
+age = 29
+husband = '阿东'
+city = '上海'
+height = 1.677
+
+print('我的名字是%s,我的年龄是%d，我的老公是%s,我住在%s,我的身高是%s米'%(name,age,husband,city,height))
+print('ABC\nEFG')
+print('\'\"')
+print('"I\'m a genius"')
+print('C:\\windows\\python')
+print('C:\windows\python')
+print('C:\nwindows\python')
+
+
