@@ -1,0 +1,47 @@
+#int整数 To str字符串
+date_of_birth=20201208
+print(type(date_of_birth))
+print(date_of_birth)
+
+date_of_birth_to_str=str(20201208)[0:4]
+print(type(date_of_birth_to_str))
+print(date_of_birth_to_str)
+
+#float浮点 To str字符串
+my_height=1.677
+print(my_height,type(my_height))
+my_height_to_str=str(my_height)
+print(my_height_to_str,type(my_height_to_str))
+
+F1_teams={'德国':'奔驰车队','英国':'迈凯轮车队','意大利':'法拉利车队'}
+print(type(F1_teams))
+F1_drivers=['阿西','阿东','阿南']
+print(type(F1_drivers))
+
+print(str(F1_teams))
+print(str(F1_drivers))
+
+print(type(str(F1_teams)))
+
+#str字符串 TO 整数int
+my_age='29'
+print(my_age,type(my_age))
+
+my_age=int(my_age)
+print(my_age,type(my_age))
+
+#float浮点 TO 整数int
+pi=3.1415
+print(type(pi))
+pi=int(pi)
+print(pi,type(pi))
+
+#str字符串 to float浮点
+my_height='1.68'
+my_height=float(my_height)
+print(my_height)
+
+#int整数 to float浮点
+enqine_capacity=2
+enqine_capacity=float(enqine_capacity)
+print(enqine_capacity)
