@@ -1,0 +1,27 @@
+# 猜名人游戏
+# 3个人的身份证号用切片工具把生日找出来
+
+import random
+real_age = random.randint(25,35)
+print('我的真实年龄：',real_age)
+chances = 3
+while chances > 0:
+    print('\n',chances,'次机会','\n')
+    guess_age = int(input('请输入你猜的年龄：->'))
+    if real_age > guess_age:
+        print('##你猜小了##')
+        chances-=1
+    elif real_age < guess_age:
+        print('##你猜大了##')
+        chances-=1
+    else:
+        print("##BINGO!##猜对了！")
+        break
+if chances==0:
+    print('\n##抱歉机会用光拉~~！##')
+    
+axi='430423199103056437'
+adong='430423199803066436'
+anan='430423200103076438'
+print(len(axi),len(adong),len(anan))
+print(axi[6:14],adong[6:14],anan[6:14])
